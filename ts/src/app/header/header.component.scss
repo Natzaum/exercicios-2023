@@ -1,0 +1,79 @@
+.header{
+  height: 68px;
+  background-color: #FDF1EB;
+  display: flex;
+  align-items: center;
+  min-width: 1200px;
+}
+
+.anaisInfo{
+  color: #725C5C;
+  margin-left: 50px;
+}
+
+.anaisInfo .firstInfo{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.anaisInfo .secondInfo{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25.78px;
+}
+
+.anaisInfo .thirdInfo{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.headerRight{
+  display: flex;
+}
+
+.language{
+  border: solid 1px;
+  border-radius: 3px;
+  border-color: #CCCCCC;
+  width: 97px;
+  height: 34px;
+  margin-left: 160px;
+  padding-right: 5px;
+  margin-right: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.languageIcons{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.notif{
+  position: absolute;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileIcon{
+  height: 35px;
+  margin-left: 10px;
+}
+
+.profileMessage{
+  font-family: "quicksand", sans-serif;
+  font-weight: 400;
+  text-align: end;
+}
