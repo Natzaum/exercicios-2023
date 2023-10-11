@@ -1,8 +1,22 @@
+::-webkit-scrollbar {
+  background: #E7E7E7;
+  border-radius: 5px;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BFBFBF;
+  border-radius: 5px;
+}
+
+.citationContent{
+  overflow: auto;
+  height: 88%;
+}
+
 .content {
   display: flex;
-  margin-top: 20px;
-  margin-left: 50px;
-  width: 90%;
+  flex-direction: column;
 }
 
 .title {
@@ -14,7 +28,7 @@
   width: 700px;
 }
 
-.right{
+.right {
   padding-left: 100px;
 }
 
@@ -82,7 +96,7 @@
   padding: 15px 18px;
 }
 
-.citation{
+.citation {
   font-family: "quicksand", sans-serif;
   font-weight: 400;
   color: #5C5C5C;
@@ -90,12 +104,12 @@
   padding: 15px 18px;
 }
 
-.autors{
+.autors {
   line-height: 22px;
   font-size: 20px;
 }
 
-.univer{
+.univer {
   color: #ADA0A0;
   font-family: "quicksand", sans-serif;
   font-weight: 100;
@@ -103,11 +117,11 @@
   padding: 15px 18px;
 }
 
-.video{
+.video {
   margin-top: 28px;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   width: 783px;
   height: 439px;
@@ -115,13 +129,13 @@
   border-radius: 3px;
 }
 
-.videoOverlay img{
+.videoOverlay img {
   width: 783px;
   height: 439px;
   border-radius: 3px;
 }
 
-.title2{
+.title2 {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -131,21 +145,125 @@
   line-height: 25px;
 }
 
-.round{
+.round {
   width: 85px;
   height: 86px;
 }
 
-.bottomVideo{
+.bottomVideo {
   display: flex;
   margin-left: 36px;
   margin-top: 144px;
 }
 
-.bottomVideo h1, h3{
+.bottomVideo h1,
+h3 {
   color: white;
   margin-left: 15px;
   margin-top: 5px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+}
+
+.left-right {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 90%;
+}
+
+.bottom {
+  width: 100%;
+}
+
+.resumeDiv {
+  width: 1127px;
+  height: 170px;
+  border-radius: 3px;
+  border: 1px solid #ADA0A0;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.resumeHeader {
+  width: 1125px;
+  height: 43px;
+  background-color: #FDF1EB;
+  border: #ECECEC 1px solid;
+  border-radius: 3px;
+}
+
+.resume {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  padding: 10px 15px;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+.btn-show-more {
+  text-decoration: none;
+  color: #ED7839;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+}
+
+.discutionsDiv {
+  width: 1127px;
+  height: 621px;
+  border-radius: 3px;
+  border: 1px solid #ADA0A0;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.discutionsPage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.discutionIcons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.discIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.curiosText{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+}
+
+.createPost{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  margin-top: 50px;
+  width: 1020px;
+  border-bottom: #E7E7E7 1px solid;
+}
+
+.createTopic{
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  display: flex;
+  position: absolute;
+  width: 133px;
+  height: 32px;
+  margin-top: 233px;
+  border-radius: 3px;
+  text-align: center;
 }
