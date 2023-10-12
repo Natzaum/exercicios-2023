@@ -9,9 +9,9 @@
   border-radius: 5px;
 }
 
-.citationContent{
+.citationContent {
   overflow: auto;
-  height: 88%;
+  height: 86%;
 }
 
 .content {
@@ -49,6 +49,7 @@
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .rightIcons {
@@ -64,6 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .citarTitle {
@@ -178,9 +180,8 @@ h3 {
 
 .resumeDiv {
   width: 1127px;
-  height: 170px;
   border-radius: 3px;
-  border: 1px solid #ADA0A0;
+  border: 1px solid #E7E7E7;
   margin-left: 50px;
   margin-top: 30px;
 }
@@ -199,6 +200,7 @@ h3 {
   padding: 10px 15px;
   line-height: 21px;
   font-size: 15px;
+  color: #5C5C5C;
 }
 
 .btn-show-more {
@@ -206,13 +208,14 @@ h3 {
   color: #ED7839;
   font-weight: 700;
   font-family: "Quicksand", sans-serif;
+  cursor: pointer;
 }
 
 .discutionsDiv {
   width: 1127px;
-  height: 621px;
+  height: 100%;
   border-radius: 3px;
-  border: 1px solid #ADA0A0;
+  border: 1px solid #E7E7E7;
   margin-left: 50px;
   margin-top: 30px;
 }
@@ -232,12 +235,79 @@ h3 {
   margin-top: 30px;
 }
 
+.newTopic{
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.assunto{
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  margin-left: 40px;
+  color: #ED7839;
+}
+
+.conteudo{
+  width: 1050px;
+  border: #CCCCCC 1px solid;
+  border-radius: 3px;
+  height: 113px;
+  margin-left: 40px;
+}
+
+.topicSent{
+  display: none;
+}
+
+.send{
+  background-color: #EAF1F2;
+  height: 31px;
+  width: 1048px;
+  display: flex;
+  justify-content: end;
+  margin-top: 81px;
+  border-radius: 3px;
+  border-top: #CCCCCC 1px solid;
+}
+
+.sendMessage{
+  width: 190px;
+  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+
+.input{
+  width: 1050px;
+  height: 39px;
+  border: #CCCCCC 1px solid;
+  border-radius: 3px;
+  align-items: center;
+}
+
+.topicSent{
+  font-family: "quicksand", sans-serif;
+  text-align: center;
+}
+
+.blurredBox{
+  filter: blur(5px);
+}
+
+.blurredText{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 420px;
+}
+
 .discIcon {
   width: 50px;
   height: 50px;
 }
 
-.curiosText{
+.curiosText {
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -245,19 +315,23 @@ h3 {
   font-weight: 400;
 }
 
-.createPost{
+.createPost {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.line{
+.line {
   margin-top: 50px;
   width: 1020px;
   border-bottom: #E7E7E7 1px solid;
 }
 
-.createTopic{
+.comentsPosts {
+  padding-bottom: 34px;
+}
+
+.createTopic {
   background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
   display: flex;
   position: absolute;
@@ -266,4 +340,78 @@ h3 {
   margin-top: 233px;
   border-radius: 3px;
   text-align: center;
+  box-shadow: 0px 2px 2px 0px #0000003D;
+  cursor: pointer;
+}
+
+.post {
+  border: #E7E7E7 solid 1px;
+  border-radius: 4px;
+  width: 1050px;
+  height: 148px;
+  margin-top: 25px;
+  margin-left: 37px;
+  box-shadow: 0px 0px 8px 0px #0000001F;
+  text-align: start;
+}
+
+.ops-topic-subject {
+  color: #ED7839;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.postText {
+  width: auto;
+  padding: 15px 18px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.postIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.likRes {
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+  color: #757575;
+  font-weight: 100;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.comments-container{
+  border: #E7E7E7 solid 1px;
+  height: 100%;
+  width: 1050px;
+  margin-left: 37px;
+  display: none;
+}
+
+.comment{
+  background-color: #F8F8F8;
+  border-bottom: #E7E7E7 1px solid;
+}
+
+.autor{
+  color: #5C5C5C;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 10px 0px 0px 20px;
+  font-family: "quicksand", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.autorResp{
+  font-family: "quicksand", sans-serif;
+  color: #4D4D4D;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 0px 30px 20px;
 }
