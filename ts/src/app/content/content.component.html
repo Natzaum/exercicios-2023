@@ -132,8 +132,8 @@
         <div class="createTopic">
           <img src="../../assets/contentIcons/icon - criar.png"
             style="width: 17px; height: 17px; margin-top: 8px; margin-left: 10px;">
-          <a class="btn-create-topic" style="justify-content: center;display: flex;margin-top: 5px;
-        font-family: quicksand, sans-serif; font-weight: 700; color: white; margin-left: 10px;">criar tópico</a>
+          <button class="btn-create-topic" style="justify-content: center;display: flex;margin-top: 5px;
+        font-family: quicksand, sans-serif; font-weight: 700; color: white; margin-left: 10px;">criar tópico</button>
         </div>
       </div>
 
@@ -144,7 +144,7 @@
           <a>Descubra outros trabalhos!</a>
         </div>
         <div class="line" style="margin-left: 55px;">
-          <div class="createTopic" style="margin-top: -17px; margin-left: 391px; width: 235px;">
+          <div class="createTopic createTopic2" style="margin-top: -17px; margin-left: 391px; width: 235px;">
             <a style="font-family: quicksand, sans-serif; font-weight: 700; color: white; margin-top: 5px; margin-left: 45px;">criar novo tópico</a>
           </div>
         </div>
@@ -157,7 +157,7 @@
         <div class="blurredBox">
         <div class="post">
           <div class="postText">
-            <h2 class="ops-topic-subject">Assunto da pergunta aparece aqui</h2>
+            <h2 class="ops-topic-subject ops-topic-subject-text">Assunto da pergunta aparece aqui</h2>
             <p style="color: #5C5C5C; font-size: 12px; font-weight: 700; margin: 8px 0px 8px 0px;">Carlos Henrique Santos</p>
             <p style="color: #4D4D4D; font-size: 14px; font-weight: 400;">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise
               da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
@@ -186,9 +186,10 @@
         </div>
 
         <div class="conteudo">
+          <textarea class="conteudo-field"></textarea>
           <div class="send">
             <div class="sendMessage">
-              <p style="font-family: quicksand, sans-serif; font-weight: 700; color: white; margin-top: 5px;">Enviar</p>
+              <button style="font-family: quicksand, sans-serif; font-weight: 700; color: white; margin-top: 5px;">Enviar</button>
             </div>
           </div>
         </div>
@@ -197,7 +198,7 @@
       <div class="comentsPosts">
         <div class="post">
           <div class="postText">
-            <h2 class="ops-topic-subject">Assunto da pergunta aparece aqui</h2>
+            <h2 class="ops-topic-subject ops-topic-subject-text">Assunto da pergunta aparece aqui</h2>
             <p style="color: #5C5C5C; font-size: 12px; font-weight: 700; margin: 8px 0px 8px 0px;">Carlos Henrique Santos</p>
             <p style="color: #4D4D4D; font-size: 14px; font-weight: 400;">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise
               da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
@@ -206,10 +207,28 @@
             <img src="../../assets/contentIcons/mais informações.png" style="width: 4px; height: 18px; margin-left: 17px;">
             <img src="../../assets/contentIcons/favoritar (1).png"  style="width: 27px; height: 23px;">
             <p class="likRes">1 like</p>
-            <p class="likRes">1 resposta</p>
+            <p class="likRes comments-get-1">1 resposta</p>
           </div>
         </div>
-        <div class="answered-topic" class="post">
+        <div class="comments-container-1" style=" display: none;border: #E7E7E7 solid 1px;
+        height: 100%;
+        width: 1050px;
+        margin-left: 37px;">
+          <div class="comment">
+            <div class="autor">
+            <p>Adriano da Silva</p>
+            <div style="display: flex;">
+            <h4 style="color: #ED7839;">Autor</h4>
+            <img src="../../assets/contentIcons/Ver.png" style="width: 20px; height: 20px; margin: 0px 30px 0px 30px;">
+          </div>
+          </div>
+            <div>
+            <p class="autorResp">Processo formativo situado impacto de processo formativo processo</p>
+            </div>
+          </div>
+
+      </div>
+        <div class="answered-topic post">
           <div class="postText">
             <h2 class="ops-topic-subject">Assunto da pergunta aparece aqui</h2>
             <p style="color: #5C5C5C; font-size: 12px; font-weight: 700; margin: 8px 0px 8px 0px;">Carlos Henrique Santos</p>
@@ -220,11 +239,11 @@
             <img src="../../assets/contentIcons/mais informações.png" style="width: 4px; height: 18px; margin-left: 17px;">
             <img src="../../assets/contentIcons/favoritar (1).png"  style="width: 27px; height: 23px;">
             <p class="likRes">4 likes</p>
-            <p class="likRes">4 resposta</p>
+            <p class="likRes comments-get">4 resposta</p>
           </div>
         </div>
 
-        <div class="comments-container">
+        <div class="comments-container" style=" display: none;">
           <div class="comment">
             <div class="autor">
             <p>Adriano da Silva</p>
