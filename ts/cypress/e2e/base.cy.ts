@@ -19,7 +19,7 @@ describe('checa elementos básicos', () => {
 
   it('expandir tópico funciona', () => {
     cy.get('.answered-topic').eq(0).click();
-    cy.get('.ops-topic-subject').eq(0).click();
+    cy.get('.answered-topic .ops-topic-subject').eq(0).click();
     cy.get('.comments-container').should('exist');
     cy.compareSnapshot('Trabalho - Card de topico expandido');
   });
@@ -29,7 +29,7 @@ describe('checa elementos básicos', () => {
     cy.get('button').contains('Enviar')
     cy.get('.assunto').contains('Assunto');
     cy.get('body').contains('Conteúdo');
-    cy.get('body').contains('Defina um tópico sucinto para notificar os autores...');
+    cy.get('.assunto input').should('have.attr', 'placeholder','Defina um tópico sucinto para notificar os autores...');
     cy.compareSnapshot('Trabalho - Criando novo topico');
   });
 
